@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bot Analytics Dashboard</title>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/adal.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='shortcut icon' href='/dist/assets/images/partner_catalyst_icon.ico' type='image/x-icon' />
+    <script>
+      String.prototype.format = function(){
+        var content = this;
+        for (var i=0; i < arguments.length; i++)
+        {
+              var replacement = '{' + i + '}';
+              content = content.replace(replacement, arguments[i]);
+        }
+        return content;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <style>
+      #map { height: 100%; }
+    </style>
+    <div id='map'></div>
+  </body>
+  <script src="https://use.fontawesome.com/ae5201ad7c.js"></script>
+</html>
